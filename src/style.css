@@ -1,5 +1,21 @@
+@font-face {
+  font-family: 'PlayfairDisplay VariableFont';
+  src: url('./assets/fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf');
+  font-optical-sizing: auto;
+  font-weight: 50;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./assets/fonts/Roboto/Roboto-Regular.ttf');
+}
+
 :root {
   --header_background_color: rgb(31, 43, 106);
+  --paragraph-color: rgb(12, 12, 12);
 }
 
 * {
@@ -11,8 +27,26 @@ html {
   font-size: 62.5%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'PlayfairDisplay VariableFont', serif;
+  letter-spacing: 0.2rem;
+}
+
+p {
+  font-family: 'Roboto Regular';
+  color: var(--paragraph-color);
+}
+
+h2 {
+  font-size: 4rem;
+}
+
 svg {
-  width: 3rem;
+  width: 4rem;
 }
 
 .background-wrap {
@@ -35,6 +69,10 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.header-about p {
+  font-size: 2rem;
 }
 
 .social-links {
