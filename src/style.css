@@ -80,3 +80,9 @@ svg {
   gap: 1rem;
   margin-top: 1rem;
 }
+
+.header-img img {
+  max-height: 50rem;
+  box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+  display: block;
+}
