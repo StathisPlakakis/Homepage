@@ -11,6 +11,10 @@ html {
   font-size: 62.5%;
 }
 
+svg {
+  max-width: 3rem;
+}
+
 .header-background {
   position: fixed;
   width: 100vw;
