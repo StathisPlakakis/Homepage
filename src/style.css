@@ -99,11 +99,12 @@ svg {
   background-image: url('./assets/images&icons/headerZoom.jpg');
   background-position: center;
   background-size: contain;
+  float: left;
 }
 
 h1 {
   position: absolute;
-  bottom: 10px;
+  bottom: 1rem;
   left: 50%;
   transform: translate(-50%, 0);
   text-shadow: 2px 2px 4px #000000;
@@ -115,4 +116,53 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (min-width: 709px) {
+  .header-info {
+    display: flow-root;
+    margin: 10rem;
+  }
+
+  .header-about {
+    display: block;
+    background-color: #ffffff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .header-img {
+    z-index: 1;
+    background-image: url('./assets/images&icons/header.jpg');
+    height: 50rem;
+    width: 33rem;
+    float: left;
+    margin-right: 20px;
+    margin-left: -50px;
+    margin-top: -80px;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    top: 10px;
+    right: -80%;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 4rem;
+  }
+
+  .header-about h2 {
+    margin-bottom: 3rem;
+  }
+
+  .social-links {
+    display: none;
+  }
+
+  .header-background {
+    margin-top: -100px;
+  }
 }
