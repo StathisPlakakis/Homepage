@@ -96,6 +96,9 @@ svg {
   width: 24rem;
   position: relative;
   color: #ffffff;
+  background-image: url('./assets/images&icons/headerZoom.jpg');
+  background-position: center;
+  background-size: contain;
 }
 
 h1 {
