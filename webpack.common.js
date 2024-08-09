@@ -24,15 +24,15 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[hash].[ext]',
-              outputPath: './assets/images&icons',
-            },
-          },
-        ],
+        // use: [
+        //   {
+        //     loader: 'file-loader',
+        //     options: {
+        //       name: '[name].[hash].[ext]',
+        //       outputPath: './assets/images&icons',
+        //     },
+        //   },
+        // ],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/i,
