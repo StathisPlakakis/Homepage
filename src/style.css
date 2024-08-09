@@ -166,3 +166,37 @@ h1 {
     margin-top: -100px;
   }
 }
+
+@media (min-width: 1000px) {
+  .header-info {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .header-img {
+    margin: 0;
+    flex-shrink: 0;
+  }
+
+  .header-img {
+    background-position: center;
+    background-size: contain;
+    float: left;
+  }
+
+  h1 {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: auto;
+    right: auto;
+    white-space: nowrap;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: flex-end;
+    transform: translateY(30px);
+  }
+}
