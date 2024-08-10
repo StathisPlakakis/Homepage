@@ -182,7 +182,7 @@ main {
   padding-bottom: 2rem;
 }
 
-@media (min-width: 709px) {
+@media (min-width: 770px) {
   .header-info {
     display: flow-root;
     margin: 10rem;
@@ -228,6 +228,14 @@ main {
 
   .header-background {
     margin-top: -100px;
+  }
+
+  .main-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+  .project-card {
+    max-width: none;
   }
 }
 
