@@ -233,6 +233,17 @@ footer {
   width: 3rem;
 }
 
+.footer-img {
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
 @media (min-width: 770px) {
   .header-info {
     display: flow-root;
