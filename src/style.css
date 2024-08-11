@@ -49,6 +49,18 @@ svg {
   width: 4rem;
 }
 
+a {
+  color: #ffffff;
+  font-family: 'Roboto Regular';
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: #ffffff;
+}
+
 .header-info {
   margin: 2rem;
   margin-top: 0;
@@ -124,6 +136,7 @@ main {
   align-items: center;
   gap: 20px;
   margin: 0px 20px;
+  margin-bottom: 3rem;
 }
 
 .main-projects {
@@ -180,6 +193,44 @@ main {
 .project-description {
   font-size: 2rem;
   padding-bottom: 2rem;
+}
+
+footer {
+  background-color: var(--header_background_color);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1 1 0;
+  padding: 30px;
+}
+
+.footer-contact p {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.footer-contact .social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone img,
+.email img {
+  width: 3rem;
 }
 
 @media (min-width: 770px) {
