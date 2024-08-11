@@ -410,7 +410,21 @@
         </div>
       </div>
       <div class="footer-img">
-        <img src="./assets/images&icons/footer.jpg" alt="Image of someone typing in a laptop">
+        <picture class="footer-picture">
+          <source
+            srcset="./assets/images&icons/footerZoom.jpg"
+            media="(min-width: 1000px)"
+          />
+          <source
+            srcset="./assets/images&icons/footer.jpg"
+            media="(min-width: 770px)"
+          />
+          <img
+            src="./assets/images&icons/footerZoom.jpg"
+            alt="Image of someone typing in a laptop"
+            class="footer-image"
+          />
+        </picture>
       </div>
     </footer>
   </body>

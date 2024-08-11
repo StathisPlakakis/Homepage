@@ -236,12 +236,18 @@ footer {
 .footer-img {
   flex: 1 1 0;
   display: flex;
-  justify-content: center;
+  align-content: center;
 }
 
-.footer-img img {
+.footer-img picture {
+  width: 100%;
+  display: flex;
+}
+
+.footer-img picture img {
   width: 100%;
   object-fit: cover;
+  height: 400px;
 }
 
 @media (min-width: 770px) {
@@ -299,6 +305,12 @@ footer {
   .project-card {
     max-width: none;
   }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 40px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -334,5 +346,13 @@ footer {
     display: flex;
     justify-content: flex-end;
     transform: translateY(30px);
+  }
+
+  footer .social-links {
+    justify-content: flex-start;
+  }
+
+  .footer-img img {
+    object-fit: fill;
   }
 }
